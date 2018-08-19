@@ -94,11 +94,11 @@ public class Handler { // Loops through all of the objects
         Block block;
 
         // dyanmically creating blocks
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < 100; i++) {
             // Check if block was created previously then based off that create random block
             
             do {
-                randomBlockXLocation = (int) (Math.random() * (Game.WIDTH - rightWall.getWidth()));
+                randomBlockXLocation = (int) (Math.random() * (Game.WIDTH - rightWall.getWidth())+leftWall.getWidth());
             } while ((randomBlockXLocation >= leftWall.getWidth()) && (randomBlockXLocation + 60) >= (rightWall.getX()) );
             
             // Increase the block y location

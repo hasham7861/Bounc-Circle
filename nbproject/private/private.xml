@@ -3,12 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Hasham/Documents/NetBeansProjects/BouncingCircle/src/bouncingcircle/window/Window.java</file>
-            <file>file:/C:/Users/Hasham/Documents/NetBeansProjects/BouncingCircle/src/bouncingcircle/window/Menu.java</file>
-            <file>file:/C:/Users/Hasham/Documents/NetBeansProjects/BouncingCircle/src/bouncingcircle/framework/ObjectId.java</file>
+            <file>file:/C:/Users/Hasham/Documents/NetBeansProjects/BouncingCircle/src/bouncingcircle/framework/KeyInput.java</file>
             <file>file:/C:/Users/Hasham/Documents/NetBeansProjects/BouncingCircle/src/bouncingcircle/window/Handler.java</file>
-            <file>file:/C:/Users/Hasham/Documents/NetBeansProjects/BouncingCircle/src/bouncingcircle/objects/Block.java</file>
             <file>file:/C:/Users/Hasham/Documents/NetBeansProjects/BouncingCircle/src/bouncingcircle/objects/Player.java</file>
+            <file>file:/C:/Users/Hasham/Documents/NetBeansProjects/BouncingCircle/src/bouncingcircle/window/Camera.java</file>
             <file>file:/C:/Users/Hasham/Documents/NetBeansProjects/BouncingCircle/src/bouncingcircle/window/Game.java</file>
         </group>
     </open-files>

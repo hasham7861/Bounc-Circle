@@ -30,8 +30,8 @@ public class Menu extends MouseAdapter {
     public Menu(Game game,Handler handler){
         this.game=game;
         this.handler = handler;
-        this.menuString = "Menu";
-        this.menuStringX = 160;
+        this.menuString = "Bouncing Circle";
+        this.menuStringX = 40;
         this.menuStringColor = Color.WHITE;
         
     }
