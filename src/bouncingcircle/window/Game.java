@@ -103,6 +103,7 @@ public class Game extends Canvas implements Runnable { // Main window
             this.removeMouseListener(menu);
             
             // load the key listener inorder to play the game
+            
             this.addKeyListener(new KeyInput(handler));
             
             // Reset the game to menu when it's game over
@@ -120,6 +121,8 @@ public class Game extends Canvas implements Runnable { // Main window
                 menu = new Menu(this, handler);
                 menu.setGameOverString();
                 this.addMouseListener(menu);
+                KeyInput.setKeyReleasedLeft(true);
+                KeyInput.setKeyReleasedRight(true);
 
             }else{
 //                 this.removeMouseListener(menu);
