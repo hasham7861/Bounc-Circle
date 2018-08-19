@@ -37,4 +37,5 @@ public class Block extends GameObject{ // Block method is used for the collision
 	public Rectangle getBounds() {// draws the collision box in java
 		return new Rectangle((int)x,(int)y, Width,Height);
 	}
+        
 }

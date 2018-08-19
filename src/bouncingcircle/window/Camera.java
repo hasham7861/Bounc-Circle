@@ -10,7 +10,7 @@ public class Camera  { // Shifts the ball up
 	public Camera(float x,float y) {
 		this.x=y;
 		this.y=y;
-		firstStep = Handler.getFirstBlock();
+//		firstStep = Handler.getFirstBlock();
 			}
 
 	public float getX() {

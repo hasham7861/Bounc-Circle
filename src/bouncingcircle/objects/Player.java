@@ -2,7 +2,9 @@ package bouncingcircle.objects;
 
 import bouncingcircle.window.*;
 import bouncingcircle.framework.*;
+import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Rectangle;
 import java.util.LinkedList;
@@ -139,14 +141,14 @@ public class Player extends GameObject{ // Bouncing ball object
 
 	public void render(Graphics g) { 
 		g.drawImage(playerBall,(int)getX(),(int)getY(),null);
-		/* ****** To check the collison of the player
-		Graphics2D g2d = (Graphics2D) g ;
-		g.setColor(Color.red);
-		g2d.draw(getBounds());
-		g2d.draw(getBoundsRight());
-		g2d.draw(getBoundsLeft());
-		g2d.draw(getBoundsTop());
-		 */
+		// To check the collison of the player
+//		Graphics2D g2d = (Graphics2D) g ;
+//		g.setColor(Color.red);
+//		g2d.draw(getBounds());
+//		g2d.draw(getBoundsRight());
+//		g2d.draw(getBoundsLeft());
+//		g2d.draw(getBoundsTop());
+		
 
 	}
 	//******************************* Collision Boxes around the ball*******************************************
@@ -194,8 +196,8 @@ public class Player extends GameObject{ // Bouncing ball object
 		return firstStepTouched;
 	}
 
-	public void setFirstStepTouched(boolean firstStepTouched) {
-		this.firstStepTouched = firstStepTouched;
+	public static void setFirstStepTouched(boolean firstStepTouched) {
+		Player.firstStepTouched = firstStepTouched;
 	}
 
 
