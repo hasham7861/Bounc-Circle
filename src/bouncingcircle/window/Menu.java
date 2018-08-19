@@ -22,10 +22,18 @@ public class Menu extends MouseAdapter {
 
     private final Game game;
     private Handler handler;
+    private String  menuString;
+  
+    private int menuStringX;
+    private  Color menuStringColor;
     
     public Menu(Game game,Handler handler){
         this.game=game;
         this.handler = handler;
+        this.menuString = "Menu";
+        this.menuStringX = 160;
+        this.menuStringColor = Color.WHITE;
+        
     }
 
     public void mousePressed(MouseEvent e) {
@@ -61,15 +69,21 @@ public class Menu extends MouseAdapter {
         }
         
     }
-
+    
+    public void setGameOverString(){
+        this.menuString = "GameOver";
+        this.menuStringX = 100;
+        this.menuStringColor= Color.RED;
+        
+    }
     public void render(Graphics g) {
         Font fnt = new Font("arial",1,50);
         Font fnt2 = new Font("arial",1,30);
         
         
         g.setFont(fnt);
-        g.setColor(Color.WHITE);
-        g.drawString("Menu",160,100);
+        g.setColor(menuStringColor);
+        g.drawString(this.menuString,menuStringX,100);
         
         g.setFont(fnt2);
         g.drawRect(100,200,250,64);
@@ -79,7 +93,6 @@ public class Menu extends MouseAdapter {
         g.drawString("Quit",195,343);
         
    
-
     }
 
     public void tick() {

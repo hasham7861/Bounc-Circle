@@ -90,13 +90,20 @@ public class Game extends Canvas implements Runnable { // Main window
 
     private void tick() {// Updates everything in the game
         handler.tick();
+        
         if (gameState == STATE.Game) {
+            
             for (int i = 0; i < handler.object.size(); i++) {
                 if (handler.object.get(i).getId() == ObjectId.Player) {
                     cam.tick(handler.object.get(i));
 
                 }
             }
+            // Remove the mouse listeners from menu screen once game loads
+            this.removeMouseListener(menu);
+            
+            // load the key listener inorder to play the game
+            this.addKeyListener(new KeyInput(handler));
             
             // Reset the game to menu when it's game over
             if (Player.isEndGame()) {
@@ -105,12 +112,17 @@ public class Game extends Canvas implements Runnable { // Main window
                 if(Player.isFirstStepTouched()){
                    Player.setFirstStepTouched(false);
                 }
+                // reset the attributes for the game
                 Player.setEndGame(false);
+                Player.setScore(0);
                 cam = new Camera(0, 0);
                 handler = new Handler(cam);
                 menu = new Menu(this, handler);
+                menu.setGameOverString();
                 this.addMouseListener(menu);
 
+            }else{
+//                 this.removeMouseListener(menu);
             }
 
         } else if (gameState == STATE.Menu) {

@@ -180,8 +180,8 @@ public class Player extends GameObject{ // Bouncing ball object
 		return score;
 	}
 
-	public void setScore(int score) {
-		this.score = score;
+	public static void setScore(int score) {
+		Player.score = score;
 	}
 
 	public static boolean isEndGame() {// Gets the boolean, when the game has been ended
