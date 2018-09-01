@@ -1,5 +1,5 @@
 # BouncingCircle
-###Description:
+##Description:
 A casual game with the name bouncing circle which tests your ability in gaming. It’s not just your typical casual game, where it is easy to gain points. No! No! No! It’s just the opposite!
 
 ###Contributors:
